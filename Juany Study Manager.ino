@@ -107,6 +107,7 @@ pinMode(12,OUTPUT);
    rtc.writeProtect(false);
    rtc.halt(false);
  Time t(2020, 12, 13, 15, 17, 00, Time::kSaturday);
+  //初始化时间为2020年12月13日15:17:00，仅第一次上传代码需初始化
    rtc.time(t);
 }
 
