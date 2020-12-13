@@ -129,7 +129,7 @@ delayMicroseconds(10);
 digitalWrite(TrigPin, LOW);
 cm = pulseIn(EchoPin, HIGH) / 58.0;   // 检测脉冲宽度，并计算出距离
   Serial.println(cm);
-  if (cm <=50)
+  if (cm <=40)
 {
         digitalWrite(13,HIGH);  
   u8g.firstPage();  
